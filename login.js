@@ -8,7 +8,7 @@ document.querySelector('#register').addEventListener('click', function() {
         email: userEmail,
         mdp: userPassword,
     }
-    fetch('http://localhost:3000/users/signup', {
+    fetch('https://weatherapp-backend-smoky.vercel.app/users/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify(data),
@@ -29,7 +29,7 @@ document.querySelector('#connection').addEventListener('click', function() {
         email: userEmail,
         mdp: userPassword,
     }
-    fetch('http://localhost:3000/users/signin', {
+    fetch('https://weatherapp-backend-smoky.vercel.app/users/signin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify({ body }),
